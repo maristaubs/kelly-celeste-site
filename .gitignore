@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Config local do Claude Code
+.claude/
+
+# Dados pessoais — sidecar do Claude Design (contém a FOTO real da Kelly).
+# Fica na máquina, mas não vai para o repositório público.
+design/.image-slots.state.json
+
+# Dependências / build (caso o projeto evolua para algo com Node)
+node_modules/
+dist/
+*.log
