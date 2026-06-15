@@ -410,19 +410,7 @@ section[id] { scroll-margin-top: 78px; }
   aspect-ratio: 4 / 5;
 }
 [data-theme="5"] .media-frame { border: 1.5px solid var(--ink); box-shadow: 12px 12px 0 var(--accent); }
-.media-photo { width: 100%; height: 100%; }
-
-/* Placeholder de foto (enquanto a foto real da Kelly não entra).
-   Substituir o .photo-ph no HTML por <img class="media-photo" ...> quando houver foto. */
-.photo-ph {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 10px; padding: 20px; text-align: center;
-  color: var(--muted); background: var(--surface-2);
-  border: 1.5px dashed var(--line-2);
-}
-.photo-ph-ico { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; opacity: .5; }
-.photo-ph-cap { font-size: 14px; font-weight: 600; }
-.photo-ph-cap em { font-style: normal; color: var(--accent); }
+.media-photo { width: 100%; height: 100%; object-fit: cover; }
 .media-badge {
   position: absolute; right: -10px; bottom: -16px;
   display: flex; align-items: center; gap: 12px;
