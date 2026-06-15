@@ -462,13 +462,22 @@ section[id] { scroll-margin-top: 78px; }
 [data-theme="2"] .service-card h3, [data-theme="3"] .service-card h3 { font-weight: 700; }
 .service-card p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
 
-/* ── Audience ───────────────────────────────────────────────────────── */
+/* ── Audience (tags / pílulas) ──────────────────────────────────────── */
 .audience { background: var(--surface-2); }
-.audience-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
-.aud-card { background: var(--card-bg); border: var(--card-border); border-radius: var(--radius-card); box-shadow: var(--card-shadow); padding: 24px 24px; }
-.aud-card h3 { font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking); font-size: 20px; margin: 0 0 7px; color: var(--ink); }
-[data-theme="2"] .aud-card h3, [data-theme="3"] .aud-card h3 { font-weight: 700; }
-.aud-card p { margin: 0; color: var(--ink-2); font-size: 15px; }
+.audience-tags { display: flex; flex-wrap: wrap; gap: 10px 12px; list-style: none; padding: 0; margin: 0 0 26px; }
+.aud-tag {
+  display: inline-flex; align-items: center;
+  padding: 11px 19px; border-radius: 999px;
+  font-weight: 600; font-size: 15.5px; line-height: 1;
+  background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line-2);
+  transition: transform .15s ease, box-shadow .2s ease;
+}
+.aud-tag:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -16px rgba(0,0,0,.45); }
+/* Tags em destaque — cores da marca */
+.aud-tag--petrol { background: #2C5F6F; color: #fff; border-color: #2C5F6F; }  /* azul-petróleo */
+.aud-tag--coral  { background: #BD6B49; color: #fff; border-color: #BD6B49; }  /* coral */
+.audience-note { font-size: 15.5px; color: var(--ink-2); margin: 0; }
 
 /* ── How it works ───────────────────────────────────────────────────── */
 .steps { display: grid; grid-template-columns: 1fr; gap: 22px; counter-reset: step; }
@@ -565,7 +574,6 @@ section[id] { scroll-margin-top: 78px; }
    ════════════════════════════════════════════════════════════════════ */
 @media (min-width: 600px) {
   .cred-inner { grid-template-columns: repeat(4, 1fr); }
-  .audience-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 760px) {
   body { font-size: 18px; }
@@ -583,7 +591,6 @@ section[id] { scroll-margin-top: 78px; }
 }
 @media (min-width: 1000px) {
   .services-grid { grid-template-columns: repeat(3, 1fr); }
-  .audience-grid { grid-template-columns: repeat(4, 1fr); }
   .hero-media { margin-right: 8px; }
 }
 
