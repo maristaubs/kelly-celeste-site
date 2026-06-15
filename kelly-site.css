@@ -474,9 +474,6 @@ section[id] { scroll-margin-top: 78px; }
   transition: transform .15s ease, box-shadow .2s ease;
 }
 .aud-tag:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -16px rgba(0,0,0,.45); }
-/* Tags em destaque — cores da marca */
-.aud-tag--petrol { background: #2C5F6F; color: #fff; border-color: #2C5F6F; }  /* azul-petróleo */
-.aud-tag--coral  { background: #BD6B49; color: #fff; border-color: #BD6B49; }  /* coral */
 .audience-note { font-size: 15.5px; color: var(--ink-2); margin: 0; }
 
 /* ── How it works ───────────────────────────────────────────────────── */
