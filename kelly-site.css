@@ -494,6 +494,7 @@ section[id] { scroll-margin-top: 78px; }
 /* ── About ──────────────────────────────────────────────────────────── */
 .about-inner { display: grid; gap: clamp(28px, 5vw, 60px); align-items: center; }
 .about-media .media-frame { aspect-ratio: 4 / 5; }
+.about-text .section-title { margin-bottom: 24px; }
 .about-text p { color: var(--ink-2); margin: 0 0 16px; font-size: 16.5px; }
 .about-text strong { color: var(--ink); font-weight: 700; }
 .about-sign { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); }
