@@ -545,7 +545,7 @@ section[id] { scroll-margin-top: 78px; }
 [data-theme="2"] .final-cta .eyebrow, [data-theme="5"] .final-cta .eyebrow, [data-theme="4"] .final-cta .eyebrow { color: color-mix(in srgb, var(--cta-ink) 70%, transparent); }
 .cta-title { font-family: var(--font-display); font-weight: var(--display-weight); letter-spacing: var(--display-tracking); font-size: clamp(30px, 5vw, 52px); line-height: 1.06; margin: 0 0 18px; color: var(--cta-ink); text-wrap: balance; }
 .cta-sub { font-size: clamp(16px, 2.2vw, 20px); color: var(--cta-sub); margin: 0 auto 32px; max-width: 52ch; }
-.cta-actions { display: flex; justify-content: center; margin-bottom: 26px; }
+.cta-actions { display: flex; justify-content: center; }
 .final-cta .btn--wa { background: var(--accent); color: var(--accent-ink); }
 [data-theme="4"] .final-cta .btn--wa { background: var(--cta-ink); color: var(--accent); }
 [data-theme="5"] .final-cta .btn--wa, [data-theme="2"] .final-cta .btn--wa { background: var(--accent); color: var(--accent-ink); }
