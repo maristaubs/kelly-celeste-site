@@ -4,13 +4,22 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- Redireciona www e *.pages.dev para o domínio principal (sem www) -->
+<script>
+(function () {
+  var h = location.hostname;
+  if (h === 'www.kellyceleste.com.br' || /\.pages\.dev$/i.test(h)) {
+    location.replace('https://kellyceleste.com.br' + location.pathname + location.search + location.hash);
+  }
+})();
+</script>
+
 <!-- ░░░ SEO ░░░ -->
 <title>Kelly Celeste Contabilidade | Contadora para autônomos, MEIs e pequenas empresas</title>
 <meta name="description" content="Contabilidade e Imposto de Renda para autônomos, MEIs, pequenas empresas e pessoas físicas, explicados de forma simples." />
 <meta name="author" content="Kelly Celeste Contabilidade" />
 <meta name="theme-color" content="#1F232A" />
 
-<!-- ⚠️ PLACEHOLDER: troque pelo domínio real quando o site estiver no ar -->
 <link rel="canonical" href="https://kellyceleste.com.br/" />
 
 <!-- ░░░ Open Graph (Facebook, WhatsApp, LinkedIn) ░░░ -->
@@ -19,7 +28,6 @@
 <meta property="og:site_name" content="Kelly Celeste Contabilidade" />
 <meta property="og:title" content="Kelly Celeste Contabilidade" />
 <meta property="og:description" content="Contabilidade e Imposto de Renda para autônomos, MEIs, pequenas empresas e pessoas físicas, explicados de forma simples." />
-<!-- ⚠️ PLACEHOLDER: ajuste o domínio nas duas URLs abaixo -->
 <meta property="og:url" content="https://kellyceleste.com.br/" />
 <meta property="og:image" content="https://kellyceleste.com.br/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -33,7 +41,6 @@
 <meta name="twitter:image" content="https://kellyceleste.com.br/og-image.png" />
 
 <!-- ░░░ Dados estruturados (Google) ░░░
-     ⚠️ PENDENTE: "url" e "image" usam o domínio provisório (atualizar ao ligar o domínio).
      E-mail e avaliações/estrelas omitidos de propósito (e-mail a confirmar; depoimentos ainda são exemplo). -->
 <script type="application/ld+json">
 {
