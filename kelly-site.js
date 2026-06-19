@@ -34,6 +34,25 @@
       track.scrollBy({ left: dir * step * perView, behavior: 'smooth' });
     }
 
+    // "Ler mais" para depoimentos longos
+    var quotes = track.querySelectorAll('blockquote');
+    for (var i = 0; i < quotes.length; i++) {
+      (function (q) {
+        q.classList.add('clamp');
+        if (q.scrollHeight - q.clientHeight > 4) {
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'testi-more';
+          btn.textContent = 'Ler mais';
+          btn.addEventListener('click', function () {
+            var clamped = q.classList.toggle('clamp');
+            btn.textContent = clamped ? 'Ler mais' : 'Ler menos';
+          });
+          q.insertAdjacentElement('afterend', btn);
+        }
+      })(quotes[i]);
+    }
+
     if (prev) prev.addEventListener('click', function () { page(-1); });
     if (next) next.addEventListener('click', function () { page(1); });
     track.addEventListener('scroll', updateArrows, { passive: true });
