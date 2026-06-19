@@ -558,7 +558,7 @@ section[id] { scroll-margin-top: 78px; }
   .site-header .header-actions .btn--wa { padding: 13px 22px; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .testi-grid { grid-template-columns: repeat(3, 1fr); }
-  .steps { grid-template-columns: repeat(3, 1fr); gap: 30px; }
+  .steps { grid-template-columns: repeat(3, 1fr); gap: 56px; }
   .hero-inner { grid-template-columns: 1.1fr .9fr; }
   .about-inner { grid-template-columns: .85fr 1.15fr; }
   .footer-inner { grid-template-columns: 1.2fr 1fr; align-items: start; }
